@@ -153,7 +153,21 @@ img {
   position:absolute;
   inset:0;
   background:url('./assets/glass-ribbons.png') center center/cover no-repeat;
-  z-index:-2
+  z-index:-2;
+  transform-origin:70% 55%;
+  animation:hero-drift 8s ease-in-out infinite alternate;
+  will-change:transform
+}
+@keyframes hero-drift {
+  0% {
+    transform:translate3d(-1.2%,.5%,0) scale(1.045) rotate(-.7deg)
+  }
+  50% {
+    transform:translate3d(.5%,-.8%,0) scale(1.07) rotate(.25deg)
+  }
+  100% {
+    transform:translate3d(1.4%,.4%,0) scale(1.045) rotate(.7deg)
+  }
 }
 .hero-wash {
   position:absolute;
@@ -1114,5 +1128,10 @@ h1 em,h2 em {
   }
   .bento-feature {
     transform:none!important
+  }
+  .hero-art {
+    animation:none!important;
+    transform:none!important;
+    will-change:auto
   }
 }
