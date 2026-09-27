@@ -4,4 +4,4 @@ This is an independent design exploration, not the live Shopision website. It ha
 
 The public preview is intentionally hosted separately from `go.shopision.com` and `dev.shopision.com`.
 
-The hero artwork is a generated still with CSS camera drift; reduced-motion settings keep it stationary. It is not a rotating 3D model or a video.
+The hero now renders a rotating procedural Three.js sculpture of interlocked glass and metal ribbons. The original generated image is the reduced-motion and WebGL fallback. This is a stylized interpretation, not an exact reconstruction of the still image.
